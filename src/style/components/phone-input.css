@@ -1,0 +1,48 @@
+.PhoneInput {
+    border: 1px solid #EEF3FC;
+    background-color: #EEF3FC;
+    padding: 7.5px 17px;
+}
+
+.PhoneInput svg {
+    vertical-align: initial;
+}
+
+.PhoneInput .PhoneInputCountryIcon--border {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.PhoneInput .PhoneInputCountrySelectArrow {
+    opacity: 1;
+}
+
+.PhoneInput .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon--border {
+    box-shadow: none;
+}
+
+.PhoneInputCountry {
+    padding: 2px 0 5px;
+}
+
+.PhoneInputInput {
+    border: none;
+    background-color: #EEF3FC;
+    padding: 2px 5px 5px 4px;
+    outline: none;
+    color: #8792A7;
+}
+
+.PhoneInput--focus {
+    background-color: #fff;
+    border: 1px solid #8792A7;
+}
+
+.PhoneInput--focus .PhoneInputInput{
+    background-color: #fff;
+    color: #121212;
+}
+
+.PhoneInput.error {
+    border: 1px solid red;
+}
