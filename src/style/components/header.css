@@ -1,0 +1,207 @@
+.App-header {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    padding: 25px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #8792A7;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 12px 5px;
+}
+
+.navbar .navbar-nav .nav-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link:not(:first-child) {
+    margin-left: 10px;
+}
+
+.nav-link.active {
+    color: #121212;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.04);
+    padding: 4px 8px;
+    min-width: 112px;
+}
+
+.dropdown-item {
+    padding: 4px 0;
+    color: #8792A7;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: #121212;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    padding-left: 48px;
+    outline: none;
+    z-index: 9999;
+    position: fixed;
+    top: 38px;
+    right: 60px;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler.collapsed {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5H30V8H2V5Z' fill='%23121212'/%3E%3Cpath d='M2 14.5H26V17.5H2V14.5Z' fill='%23121212'/%3E%3Cpath d='M2 23H18V26H2V23Z' fill='%23121212'/%3E%3C/svg%3E%0A");
+}
+
+.navbar-light .navbar-toggler {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.12891 5L26.9999 24.871L24.8708 27L4.99988 7.12903L7.12891 5Z' fill='%23121212'/%3E%3Cpath d='M27 7.12915L7.12905 27.0001L5.00002 24.8711L24.871 5.00012L27 7.12915Z' fill='%23121212'/%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: 992px) {
+    .App-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .App-header .wrapButton {
+        position: absolute;
+        top: 33px;
+        right: 193px;
+    }
+
+    .navbar-collapse.show {
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        padding-top: 159px;
+        min-height: 100vh;
+    }
+
+    .collapsing {
+        -webkit-transition: none;
+        transition: none;
+        display: none;
+    }
+
+    .navbar-nav > .nav-link {
+        border-bottom: 1px solid #EEF3FC;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #EEF3FC;
+    }
+
+    .navbar .navbar-nav .nav-item.show .dropdown-toggle {
+        padding-bottom: 15px;
+    }
+
+    .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding: 0 8px 0 60px;
+    }
+
+    .dropdown-menu a {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: #121212;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        padding: 23px 0;
+    }
+
+    .navbar .navbar-nav .nav-link:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .navbar .navbar-nav .nav-link:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #018FDE;
+    }
+
+    .App-header .wrapButton {
+        z-index: 10;
+    }
+
+    .navbar {
+        padding: 36px 0 32px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .App-header .wrapButton {
+        display: none;
+    }
+
+    .navbar-light .navbar-toggler {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        color: transparent;
+    }
+
+    .navbar-collapse.show {
+        padding-top: 60px;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar-brand img {
+        width: 65px;
+    }
+
+    .navbar-light .navbar-toggler {
+        top: 17px;
+        right: 17px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .dropdown-menu {
+        padding: 0 8px 0 30px;
+    }
+
+    a.dropdown-item {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+}
