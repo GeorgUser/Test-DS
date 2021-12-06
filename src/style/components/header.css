@@ -17,11 +17,11 @@
     padding: 8px 12px 5px;
 }
 
-.navbar .navbar-nav .nav-link:not(:last-child) {
+.navbar .navbar-nav > .nav-link:not(:last-child) {
     margin-right: 10px;
 }
 
-.navbar .navbar-nav .nav-link:not(:first-child) {
+.navbar .navbar-nav > .nav-link:not(:first-child) {
     margin-left: 10px;
 }
 
