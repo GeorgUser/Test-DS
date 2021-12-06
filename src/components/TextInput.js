@@ -12,6 +12,10 @@ const TextInput = React.forwardRef((props, ref) => {
             classList += "error";
         }
 
+        if(classList !== '') {
+            classList += ' ';
+        }
+
         if(focusInput || value ) {
             classList += (element + "-focus");
         }
