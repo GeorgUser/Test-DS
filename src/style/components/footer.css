@@ -1,0 +1,202 @@
+.footer {
+    background-color: #000;
+    padding: 76px 40px 96px;
+}
+
+.footer .row > div {
+    padding: 0;
+}
+
+.footer p,
+.footer a {
+    color: #DBDBDB;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer-logo {
+    margin-bottom: 18px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+p.footer__title {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.country {
+    display: flex;
+    justify-content: space-between;
+    width: 165px;
+    max-width: 100%;
+}
+
+.footer__phones {
+    padding: 0 80px 0 107px;
+}
+
+.country:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.country__name {
+    text-transform: uppercase;
+}
+
+.country__number a {
+    display: block;
+}
+
+.footer__office-info__item {
+    padding-left: 20px;
+}
+
+.footer__office-info__item.end-line {
+    padding-left: 30px;
+}
+
+.footer__office-info__item p {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1150px) {
+    .footer__phones {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer__office-info__item.end-line {
+        padding-left: 0;
+    }
+
+    .footer__office-info__item {
+        margin-top: 60px;
+    }
+
+    .footer {
+        padding: 50px 40px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 44px 72px 0;
+    }
+
+    p.footer__title {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .country:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .footer__phones {
+        padding: 0;
+    }
+
+    .footer__office-info__item {
+        padding-left: 14px;
+    }
+
+    .footer__office-info .row > div:nth-child(1) {
+        order: 1;
+    }
+
+    .footer__office-info .row > div:nth-child(2) {
+        order: 3;
+    }
+
+    .footer__office-info .row > div:nth-child(3) {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .footer__office-info {
+        padding: 10px;
+    }
+
+    .footer__office-info__item {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        padding: 44px 23px 0;
+    }
+
+    .footer p {
+        margin-bottom: 11px;
+        font-size: 12px;
+    }
+
+    .footer p.footer__title {
+        font-size: 13px;
+        letter-spacing: 0.8px;
+    }
+
+    .country {
+        width: 147px;
+    }
+
+    .country:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .country .country__number a:not(:first-child) {
+        margin-top: 14px;
+    }
+
+    .footer__phones {
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .footer p.country__name {
+        margin-bottom: 0;
+    }
+
+    .footer .country__number a {
+        font-size: 12px;
+    }
+
+    .footer__office-info {
+        padding: 23px 13px;
+    }
+
+    .footer__office-info__item {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .footer__office-info .row > div:first-child br {
+        display: none;
+    }
+
+    .footer__office-info .row > div:nth-child(3) p {
+        line-height: 21px;
+    }
+
+    .footer__office-info .row > div:nth-child(2) a {
+        font-size: 12px;
+    }
+}
