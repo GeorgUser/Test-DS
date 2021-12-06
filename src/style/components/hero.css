@@ -1,0 +1,158 @@
+.hero-section {
+    text-align: center;
+    position: relative;
+    padding-top: 79px;
+    padding-bottom: 62px;
+}
+
+.hero-section::before,
+.hero-section::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(264.93deg, #072E44 9.13%, #018FDE 106.76%);
+    opacity: 0.14;
+    filter: blur(250px);
+    transform: rotate(-150deg);
+}
+
+.hero-section::before {
+    width: 571.72px;
+    height: 362.48px;
+    top: 0;
+    left: 0;
+}
+
+.hero-section::after {
+    width: 472.6px;
+    height: 558.07px;
+    top: 0;
+    right: 0;
+}
+
+.hero-section .wrapper {
+    width: 864px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 42px 70px;
+}
+
+.hero-section h1 {
+    margin-bottom: 26px;
+}
+
+.hero-section .line {
+    margin-top: -11px;
+}
+
+.hero-section .line svg {
+    max-width: 100%;
+}
+
+.hero-section .wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 1px solid #121212;
+    border-left: 1px solid #121212;
+}
+
+.hero-section .wrapper::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-right: 1px solid #121212;
+    border-bottom: 1px solid #121212;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.cta__info {
+    color: #3D3D3D;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    max-width: 164px;
+    margin-right: 28px;
+}
+
+.cta .wrapButton a {
+    min-width: 211px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding-top: 188px;
+    }
+
+    .hero-section .wrapper {
+        width: 625px;
+        padding: 50px 40px 46px;
+    }
+
+    .hero-section h1 {
+        margin-bottom: 18px;
+    }
+
+    .hero-section .line {
+        padding: 0 60px;
+    }
+
+    .cta {
+        margin-top: 27px;
+    }
+
+    .hero-section .wrapper::before {
+        top: -25%;
+        left: -30%;
+    }
+
+    .hero-section .wrapper::after {
+        right: -30%;
+        bottom: -25%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero-section {
+        padding-top: 63px;
+        padding-bottom: 0;
+    }
+
+    .hero-section .wrapper {
+        padding: 50px 25px 8px;
+    }
+
+    .hero-section .line {
+        padding: 0;
+        margin-top: -6px;
+    }
+
+    .cta {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .cta__info {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-section .wrapButton{
+        margin: 10px auto;
+    }
+}
